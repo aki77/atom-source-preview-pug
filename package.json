@@ -1,0 +1,25 @@
+{
+  "name": "source-preview-jade",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "source-preview provider for jade",
+  "keywords": [
+    "jade"
+  ],
+  "repository": "https://github.com/aki77/atom-source-preview-jade",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "jade": "^1.11.0",
+    "loophole": "^1.0.0"
+  },
+  "providedServices": {
+    "preview.provider": {
+      "versions": {
+        "0.1.0": "provide"
+      }
+    }
+  }
+}
