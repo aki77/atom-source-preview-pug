@@ -5,11 +5,15 @@ class JadeProvider
   fromScopeName: 'source.jade'
   toScopeName: 'text.html.basic'
 
-  transform: (code) ->
+  transform: (code, {filePath} = {}) ->
     jade ?= @unsafe -> require 'jade'
 
+    options =
+      pretty: true
+      filename: filePath
+
     {
-      code: @unsafe -> jade.render(code, pretty: true)
+      code: @unsafe -> jade.render(code, options)
       sourceMap: null
     }
 
