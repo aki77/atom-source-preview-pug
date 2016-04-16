@@ -1,12 +1,15 @@
+PugProvider = require './pug-provider'
 JadeProvider = require './jade-provider'
 
 module.exports =
 
   activate: ->
-    @provider = new JadeProvider
+    @pugProvider = new PugProvider
+    @jadeProvider = new JadeProvider
 
   deactivate: ->
-    @provider = null
+    @pugProvider = null
+    @jadeProvider = null
 
   provide: ->
-    @provider
+    [@pugProvider, @jadeProvider]

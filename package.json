@@ -1,19 +1,21 @@
 {
-  "name": "source-preview-jade",
+  "name": "source-preview-pug",
   "main": "./lib/main",
   "version": "0.1.1",
-  "description": "source-preview provider for jade",
+  "description": "source-preview provider for Pug.",
   "keywords": [
+    "pug",
     "jade"
   ],
-  "repository": "https://github.com/aki77/atom-source-preview-jade",
+  "repository": "https://github.com/aki77/atom-source-preview-pug",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "jade": "^1.11.0",
-    "loophole": "^1.0.0"
+    "loophole": "^1.0.0",
+    "pug": "^2.0.0-alpha3",
+    "jade": "^1.11.0"
   },
   "providedServices": {
     "preview.provider": {
