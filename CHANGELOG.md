@@ -1,3 +1,6 @@
+## 0.2.0
+Renaming source-preview-jade to source-preview-pug(@danielbayley)
+
 ## 0.1.1
 * Fix #1
 
