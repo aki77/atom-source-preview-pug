@@ -11,6 +11,7 @@ class PugProvider
     options =
       pretty: true
       filename: filePath
+      require: require
 
     {
       code: @unsafe -> pug.render(code, options)

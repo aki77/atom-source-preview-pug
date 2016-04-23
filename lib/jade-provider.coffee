@@ -11,6 +11,7 @@ class JadeProvider
     options =
       pretty: true
       filename: filePath
+      require: require
 
     {
       code: @unsafe -> jade.render(code, options)
