@@ -9,7 +9,7 @@ class PugProvider
     pug ?= @unsafe -> require 'pug'
 
     options =
-      pretty: true
+      pretty: atom.workspace.getActiveTextEditor().getTabText()
       filename: filePath
       basedir: atom.project.getPaths()[0]
       require: require
