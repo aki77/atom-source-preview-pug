@@ -11,6 +11,7 @@ class PugProvider
     options =
       pretty: true
       filename: filePath
+      basedir: atom.project.getPaths()[0]
       require: require
 
     {
