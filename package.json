@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "loophole": "^1.0.0",
-    "pug": "^2.0.0-alpha3",
+    "pug": "^2.0.0-beta6",
     "jade": "^1.11.0"
   },
   "providedServices": {

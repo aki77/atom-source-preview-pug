@@ -9,8 +9,10 @@ class JadeProvider
     jade ?= @unsafe -> require 'jade'
 
     options =
-      pretty: true
+      pretty: atom.workspace.getActiveTextEditor().getTabText()
       filename: filePath
+      basedir: '/' #atom.project.getPaths()[0]
+      require: require
 
     {
       code: @unsafe -> jade.render(code, options)
