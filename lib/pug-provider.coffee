@@ -11,7 +11,7 @@ class PugProvider
     options =
       pretty: atom.workspace.getActiveTextEditor().getTabText()
       filename: filePath
-      basedir: atom.project.getPaths()[0]
+      basedir: '/' #atom.project.getPaths()[0]
       require: require
 
     {
